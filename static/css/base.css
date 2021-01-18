@@ -11,6 +11,11 @@ p {
     font-size: small;
 }
 
+#motto {
+    font-size: large;
+    font-style: italic;
+}
+
 a:link {
     color: black;
     -webkit-transition: color .5s linear;
@@ -60,9 +65,9 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
+    background: black!important;
+    color: white!important;
+    min-width: 160px;
 }
 
 .btn-black {
@@ -92,6 +97,8 @@ body {
     background: #000 !important;
 }
 
+/* -------------------------------- Navbar Styles */
+
 #delivery-banner {
     background-color: var(--banner-bg-color);
 }
@@ -100,7 +107,6 @@ body {
     background-color: var(--nav-bg-color);
 }
 .navbar {
-    padding: 0!important;
     background-color: var(--nav-bg-color);
 }
 
@@ -125,5 +131,9 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+
+    .navbar {
+        padding: 0!important;
     }
 }
