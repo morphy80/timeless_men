@@ -13,12 +13,12 @@
     {% endblock %}
 
     {% block corecss %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
         crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
     {% endblock %}
 
     {% block extra_css %}
@@ -45,25 +45,30 @@
 
 <body>
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="" class="nav-link main-logo-link">
-                    <h2 class="text-black my-0">ABOUT</h2>
+        <div id="delivery-banner" class="row text-center">
+                <div class="col text-white">
+                    <p class="my-1">Free delivery on orders over €{{ free_shipping_threshold }}!</p>
+                </div>
+        </div>
+        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
+            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 text-center text-lg-left">
+                <a href="" class="nav-link link-logo my-0">
+                    <h4 class="text-black my-0">ABOUT</h4>
                 </a>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0">TIMELESS MEN</h2>
+            <div class="col-12 col-lg-6 my-auto py-1 py-lg-0 text-center">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link mx-auto">
+                    <h2 class="logo-font text-black">TIMELESS MEN WATCHES</h2>
                 </a>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
                         <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">Accounts</p>
+                                <p class="my-0 link-logo">Accounts</p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -72,10 +77,13 @@
                             <a href="" class="dropdown-item">Item Management</a>
                             {% endif %}
                             <a href="" class="dropdown-item">Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            <a href="{% url 'account_logout' %}" 
+                                class="dropdown-item link-logo font-weight-light">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" 
+                                class="dropdown-item link-logo">Register</a>
+                            <a href="{% url 'account_login' %}" 
+                                class="dropdown-item link-logo font-weight-light">Login</a>
                             {% endif %}
                         </div>
                     </li>
@@ -84,7 +92,7 @@
                             href="">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0">
+                                <p class="my-0 link-logo">
                                     {% if grand_total %}
                                     €{{ grand_total|floatformat:2 }}
                                     {% else %}
@@ -97,6 +105,16 @@
                 </ul>
             </div>
         </div>
+        <div class="row bg-white">
+                <nav class="navbar navbar-expand-lg navbar-light w-100">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    {% include 'includes/mobile-top-header.html' %}
+                    {% include 'includes/main-nav.html' %}
+                </nav>
+            </div>
     </header>
 
     {% if messages %}
