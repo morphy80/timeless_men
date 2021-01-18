@@ -12,8 +12,9 @@ p {
 }
 
 #motto {
-    font-size: large;
+    font-size: medium;
     font-style: italic;
+    color: #200;
 }
 
 a:link {
@@ -95,6 +96,14 @@ body {
 
 .bg-black {
     background: #000 !important;
+}
+
+.nav-item {
+    font-size: medium;
+}
+
+.font-md {
+    font-size: small;
 }
 
 /* -------------------------------- Navbar Styles */
