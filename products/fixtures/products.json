@@ -1,0 +1,18 @@
+[
+{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+    "sku": "pp5001110111",
+    "name": "Bratleboro Yellowstone Leather",
+    "description": "Your best bet for style and elegance. The variety of colors and finishes combined with the organic texture of the high-quality leather strap make Yellowstone Leather a masculine collection which oozes personality.",
+    "case": "44 mm Ø",
+    "strap": "leather",
+    "price": 39.95,
+    "category": 1,
+    "rating": 4.6,
+    "image_url": "https://res.cloudinary.com/ddrsbzhmf/image/upload/v1611068216/timeless/analog_ypbo3q.jpg",
+    "image": "analog.jpg"
+    }
+}
+]
