@@ -164,12 +164,17 @@ body {
     }
 }
 
+/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-.text-index {
-    padding-top: 65vh;
+    .header-container {
+        padding-top: 116px;
     }
-}
 
-.header-container {
-    padding-top: 130px;
-}
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .text-index {
+        padding-top: 75%;
+    }
+}    
