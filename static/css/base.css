@@ -107,6 +107,22 @@ body {
     font-size: small;
 }
 
+/* -------------------------------- Products */
+
+.star {
+    color: var(--banner-bg-color);
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
 /* -------------------------------- Navbar Styles */
 
 #delivery-banner {
@@ -152,4 +168,8 @@ body {
 .text-index {
     padding-top: 65vh;
     }
+}
+
+.header-container {
+    padding-top: 130px;
 }
