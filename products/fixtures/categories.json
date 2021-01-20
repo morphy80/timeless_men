@@ -35,8 +35,8 @@
     "pk": 5,
     "model": "products.category",
     "fields": {
-    "name": "brands",
-    "friendly_name": "Brands"
+    "name": "brand",
+    "friendly_name": "Brand"
     }
 },
 {
