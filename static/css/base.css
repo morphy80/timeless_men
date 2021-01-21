@@ -123,6 +123,16 @@ body {
 	z-index: -1;
 }
 
+a.category-badge > span.badge:hover {
+    background: rgb(192, 127, 74) !important;
+    color: #fff !important;
+}
+
+.form-control:focus {
+    border-color: rgb(192, 127, 74)!important;
+    box-shadow: 0 0 0 0.2rem rgba(201, 184, 139, 0.25)!important;
+}
+
 /* -------------------------------- Navbar Styles */
 
 #delivery-banner {
