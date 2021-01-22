@@ -49,6 +49,18 @@
                     <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
+                            {% with product.has_warranty as w %}
+                            {% if w %}
+                                <div class="col-12">
+                                    <p><strong>Warranty:</strong></p>
+                                    <select class="form-control rounded-0 w-50" name="product_warranty" id="id_product_warranty">
+                                        <option value="2" selected>2 years</option>
+                                        <option value="3">3 years</option>
+                                        <option value="5">5 years</option>
+                                        <option value="l">Life</option>
+                                    </select>
+                                </div>
+                            {% endif %}
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
@@ -69,6 +81,7 @@
                                 <input type="submit" class="btn btn-dark rounded-0 text-uppercase mt-5" value="Add to Cart">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            {% endwith %}
                         </div>
                     </form>
                 </div>
