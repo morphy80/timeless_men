@@ -30,7 +30,8 @@ a:visited {
     color: rgb(196, 117, 43);
 }
 
-a:hover, a:active  {
+a:hover, 
+a:active  {
     color: rgb(192, 127, 74)!important;
 }
 
@@ -75,6 +76,7 @@ body {
 .btn-black {
     background: black;
     color: white;
+    outline: black solid 2px;
 }
 
 .shop-now-button:hover,
@@ -83,7 +85,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: rgb(24, 22, 22);
     color: white;
 }
 
@@ -108,7 +110,9 @@ body {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
