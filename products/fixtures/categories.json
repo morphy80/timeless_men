@@ -51,8 +51,8 @@
     "pk": 7,
     "model": "products.category",
     "fields": {
-    "name": "other",
-    "friendly_name": "Other"
+    "name": "warranty",
+    "friendly_name": "Warranty"
     }
 }
 ]

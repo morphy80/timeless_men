@@ -1,5 +1,5 @@
 :root {
-    --banner-bg-color:rgb(192, 127, 74);
+    --banner-bg-color:#c07f4a;
     --nav-bg-color: #edece9;
 }
 
@@ -27,12 +27,12 @@ a:link {
 }
 
 a:visited {
-    color: rgb(196, 117, 43);
+    color: #c5752b;
 }
 
 a:hover, 
 a:active  {
-    color: rgb(192, 127, 74)!important;
+    color: #c07f4a!important;
 }
 
 .link-logo {
@@ -76,7 +76,7 @@ body {
 .btn-black {
     background: black;
     color: white;
-    outline: black solid 2px;
+    outline: 2px solid black;
 }
 
 .shop-now-button:hover,
@@ -85,7 +85,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: rgb(24, 22, 22);
+    background: #222;
     color: white;
 }
 
@@ -120,12 +120,26 @@ body {
     color: #000 !important;
 }
 
+.text-cart {
+    color: #be6132!important;  
+}
+
 .border-black {
     border: 1px solid black !important;
 }
 
 .bg-black {
     background: #000 !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -2;
 }
 
 .nav-item {
@@ -142,23 +156,26 @@ body {
     color: var(--banner-bg-color);
 }
 
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    text-align: center;
 }
 
 a.category-badge > span.badge:hover {
-    background: rgb(192, 127, 74) !important;
+    background: #c07f4a !important;
     color: #fff !important;
 }
 
 .form-control:focus {
-    border-color: rgb(192, 127, 74)!important;
+    border-color: #c07f4a!important;
     box-shadow: 0 0 0 0.2rem rgba(201, 184, 139, 0.25)!important;
 }
 
