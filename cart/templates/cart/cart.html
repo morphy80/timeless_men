@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% load bag_tools %}
+{% load cart_tools %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -50,8 +50,8 @@
                                     <td class="py-3">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                         <p class="my-0"><strong>{{ item.product.brand }}</strong></p>
-                                        <p class="my-0"><strong>Warranty:
-                                            </strong>{% if item.product.has_warranty %}{{ item.warranty|upper }}{% else %}N/A{% endif %}
+                                        <p class="my-0"><strong>Warranty:</strong>
+                                            {% if item.product.has_warranty %}{{ item.warranty|upper }}{% else %}N/A{% endif %}
                                         </p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
@@ -118,7 +118,7 @@
                                         </span>
                                         <span class="text-uppercase">Keep Shopping</span>
                                     </a>
-                                    <a href="" class="btn btn-black rounded-0 btn-lg">
+                                    <a href="{% url 'checkout' %}" class="btn rounded-0 btn-lg">
                                         <span class="text-uppercase">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
