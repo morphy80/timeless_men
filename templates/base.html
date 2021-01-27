@@ -53,21 +53,21 @@
         </div>
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="" class="nav-link link-logo my-0">
-                    <h4 class="text-black my-0">ABOUT</h4>
+                <a href="" class="nav-link link-logo text-black my-0" id="about-link">
+                    <h5>ABOUT US</h5>
                 </a>
             </div>
             <div class="col-12 col-lg-6 my-auto py-1 py-lg-0 text-center">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link mx-auto">
-                    <h2 class="logo-font text-black">TIMELESS MEN WATCHES</h2>
+                <a href="{% url 'home' %}" class="nav-link main-logo-link logo-font mx-auto">
+                    <h2 class="my-0">TIMELESS MEN WATCHES</h2>
                 </a>
             </div>
             <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+                        <a class="nav-link text-black link-logo" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-                            <div class="text-center link-logo">
+                            <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">Accounts</p>
                             </div>
@@ -75,16 +75,18 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            <a href="{% url 'add_product' %}" 
+                                class="dropdown-item link-logo font-weight-ligh text-black">Product Management</a>
                             {% endif %}
-                            <a href="{% url 'profile' %}" class="dropdown-item">Profile</a>
+                            <a href="{% url 'profile' %}" 
+                                class="dropdown-item link-logo font-weight-ligh text-black">Profile</a>
                             <a href="{% url 'account_logout' %}" 
-                                class="dropdown-item link-logo font-weight-light">Logout</a>
+                                class="dropdown-item link-logo font-weight-light text-black">Logout</a>
                             {% else %}
                             <a href="{% url 'account_signup' %}" 
-                                class="dropdown-item link-logo">Register</a>
+                                class="dropdown-item link-logo font-weight-ligh text-black">Register</a>
                             <a href="{% url 'account_login' %}" 
-                                class="dropdown-item link-logo font-weight-light">Login</a>
+                                class="dropdown-item link-logo font-weight-light text-black">Login</a>
                             {% endif %}
                         </div>
                     </li>
@@ -107,19 +109,19 @@
             </div>
         </div>
         <div class="row bg-white">
-                <nav class="navbar navbar-expand-lg navbar-light w-100">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
-                        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    {% include 'includes/mobile-top-header.html' %}
-                    {% include 'includes/main-nav.html' %}
-                </nav>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mobile-top-header.html' %}
+                {% include 'includes/main-nav.html' %}
+            </nav>
+        </div>
     </header>
 
     {% if messages %}
-    <div class="message-container">
+        <div class="message-container">
             {% for message in messages %}
                 {% with message.level as level %}
                     {% if level == 40 %}
@@ -141,6 +143,11 @@
 
     {% block content %}
     {% endblock %}
+
+    <!-- Footer -->
+        <footer class="page-footer font-small pt-4">
+            <div class="footer-copyright text-center text-black py-2">© 2021 Copyright: TIMELESS MEN WATCHES</div>
+        </footer>
 
     {% block postloadjs %}
     <script type="text/javascript">

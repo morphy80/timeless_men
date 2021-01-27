@@ -36,7 +36,7 @@ a:active  {
 }
 
 .link-logo {
-    color: #000;
+    /* color: #000; */
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -61,6 +61,7 @@ body {
 .logo-font {
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
+    color: #000!important;
 }
 
 .main-logo-link {
@@ -106,7 +107,7 @@ body {
     height: 36px;
     width: 36px;
     position: fixed;
-    bottom: 10px;
+    bottom: 40px;
     right: 10px;
 }
 
@@ -140,10 +141,6 @@ body {
     position: fixed;
     background: white;
     z-index: -2;
-}
-
-.nav-item {
-    font-size: medium;
 }
 
 .font-md {
@@ -194,6 +191,10 @@ a.category-badge > span.badge:hover {
 }
 .navbar {
     background-color: var(--nav-bg-color);
+}
+
+.nav-item {
+    font-size: medium;
 }
 
 /* ------------------------------- Toasts */
@@ -347,13 +348,23 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 }
 
+/* Footer */
+
+.page-footer {
+    background-color: #fff;
+}
+
+.footer-copyright {
+    background-color: var(--nav-bg-color);
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
+    .container {
     max-width: 80%;
-  }
+    }
 }
 
 /* fixed top navbar only on medium and up */
