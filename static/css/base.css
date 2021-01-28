@@ -109,6 +109,7 @@ body {
     position: fixed;
     bottom: 40px;
     right: 10px;
+    z-index: 1;
 }
 
 .btt-link,
@@ -352,6 +353,11 @@ a.category-badge > span.badge:hover {
 
 .page-footer {
     background-color: #fff;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
 }
 
 .footer-copyright {
