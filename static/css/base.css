@@ -71,7 +71,7 @@ body {
 .shop-now-button {
     background: black!important;
     color: white!important;
-    min-width: 160px;
+    min-width: 140px;
 }
 
 .btn-black {
@@ -402,7 +402,67 @@ a.category-badge > span.badge:hover {
         height: calc(100vh - 116px);
     }
 
+    .display-4.logo-font.text-black {
+        font-size: 1.8rem;
+    }
+
+    .nav-item {
+        font-size: .8rem;
+    }
+
+    .dropdown-item {
+        font-size: .8rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: .8rem;
+    }
+
+    .navbar-toggler {
+        padding: .45rem .45rem;
+        font-size: .8rem;
+    }
+
+    .navbar {
+        font-size: .8rem;
+    }
+
+    .navbar a {
+        padding: 5px 5px;
+        font-size: .8rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+
     .text-index {
         padding-top: 75%;
+    }
+
+    .btt-button {
+        height: 24px;
+        width: 24px;
+    }
+
+    .page-footer {
+        font-size: x-small;
+        font-weight: 200;
+        margin-top: 10px;
     }
 }    
