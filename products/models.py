@@ -26,7 +26,9 @@ class Product(models.Model):
     case = models.CharField(max_length=254, null=True, blank=True)
     strap = models.CharField(max_length=254, null=True, blank=True)
     brand = models.CharField(max_length=254, null=True, blank=True)
-    has_warranty = models.BooleanField(default=False, null=True, blank=True)
+    # has_warranty = models.BooleanField(default=False, null=True, blank=True)
+    WARRANTY_CHOICES = [('2', '2 years'), ('3', '3 years'), ('5', '5 years'), ('l', 'life')]
+    year_warranty = models.CharField(max_length=1, choices=WARRANTY_CHOICES, default='2')
     rating = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)

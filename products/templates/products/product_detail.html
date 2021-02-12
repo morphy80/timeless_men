@@ -55,7 +55,7 @@
                     <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
-                            {% with product.has_warranty as w %}
+                            <!-- {% with product.has_warranty as w %}
                             {% if w %}
                                 <div class="col-12">
                                     <p><strong>Warranty:</strong></p>
@@ -66,7 +66,23 @@
                                         <option value="l">Life</option>
                                     </select>
                                 </div>
-                            {% endif %}
+                            {% endif %} -->
+
+                            <!-- <div class="col-12">
+                                <p><strong>Warranty:</strong></p>
+                                <select class="form-control rounded-0 w-50" name="product_warranty" id="id_product_warranty">
+                                    {% for value, display_value in product.year_warranty.choices %}
+                                    <option value="{{ value }}" selected>{{ display_value }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div> -->
+
+                            <div class="col-12">
+                                <p><strong>Warranty:</strong>
+                                {{ product.get_year_warranty_display }}
+                                </p>
+                            </div>
+                            
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
