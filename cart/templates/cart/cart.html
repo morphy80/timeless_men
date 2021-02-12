@@ -101,7 +101,7 @@
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6><strong>Cart Total: €{{ total|floatformat:2 }}</strong></h6>
                                     <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
-                                    <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+                                    <h5 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h5>
                                     {% if free_delivery_delta > 0 %}
                                         <p class="mb-1 text-danger">
                                             You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
@@ -115,10 +115,10 @@
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
-                                        <span class="text-uppercase">Keep Shopping</span>
+                                        <span class="text-uppercase" id="cart-logical-keep">Keep Shopping</span>
                                     </a>
                                     <a href="{% url 'checkout' %}" class="btn btn-dark rounded-0 btn-lg">
-                                        <span class="text-uppercase">Secure Checkout</span>
+                                        <span class="text-uppercase" id="cart-logical-secure">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
                                         </span>

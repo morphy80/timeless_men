@@ -451,8 +451,8 @@ a.category-badge > span.badge:hover {
         font-size: .75rem;
     }
 
-    .increment-qty, .decrement-qty {
-        padding: .25rem .5rem !important;
+    a.btn ,#cart-logical-keep{
+        font-size: 1rem;
     }
 
     .text-index {
@@ -470,3 +470,4 @@ a.category-badge > span.badge:hover {
         margin-top: 10px;
     }
 }    
+        margin-top: 10px;
