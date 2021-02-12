@@ -1,5 +1,7 @@
 # Timeless Men Watches
 
+[![Build Status](https://travis-ci.com/morphy80/timeless_men.svg?branch=master&status=passed)](https://travis-ci.com/github/morphy80/timeless_men)
+
 Full Stack Frameworks with Django - Milestone Project 4
 
 [Timeless Men Watches](https://timeless-men-watches.herokuapp.com/)
