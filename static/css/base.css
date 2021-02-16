@@ -353,6 +353,11 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 }
 
+
+#cart-table {
+    margin-bottom: 50px;
+}
+
 /* Footer */
 
 .page-footer {

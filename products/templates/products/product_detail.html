@@ -77,11 +77,19 @@
                                 </select>
                             </div> -->
 
-                            <div class="col-12">
-                                <p><strong>Warranty:</strong>
-                                {{ product.get_year_warranty_display }}
-                                </p>
-                            </div>
+                            {% if product.has_warranty %}
+                                <div class="col-12">
+                                    <p><strong>Warranty:</strong>
+                                    {{ product.has_warranty }}
+                                    </p>
+                                </div>
+                                {% else %}
+                                <div class="col-12">
+                                    <p><strong>Warranty:</strong>
+                                    {{ product.get_year_warranty_display }}
+                                    </p>
+                                </div>
+                            {% endif %}
                             
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
@@ -120,7 +128,7 @@
                                 <input type="submit" class="btn btn-dark rounded-0 text-uppercase mt-5" value="Add to Cart">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                            {% endwith %}
+                            <!-- {% endwith %} -->
                         </div>
                     </form>
                 </div>
