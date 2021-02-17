@@ -27,7 +27,7 @@
                         </div>
                         <div class="col-9">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small">Warranty: {% if item.product.has_warranty %}{{ item.warranty|upper }}{% else %}N/A{% endif %}</p>
+                            <p class="my-0 small">Warranty: {% if item.product.year_warranty %}{{ item.warranty|upper }}{% else %}N/A{% endif %}</p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                     </div>

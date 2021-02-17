@@ -49,9 +49,10 @@
                         </div>
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0"><strong>{{ item.product.brand }}</strong></p>
+                            <p class="my-0"><strong>Brand: {{ item.product.brand }}</strong></p>
                             <p class="my-0 small">Warranty:
-                                {% if item.product.has_warranty %}{{ item.warranty|upper }}{% else %}N/A{% endif %}</p>
+                                    {{ item.product.get_year_warranty_display|title }}
+                            </p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right">
@@ -73,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 pb-5">
                 <p class="text-muted">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}

@@ -22,7 +22,7 @@
                     </span>
                 </button>
             </div>
-            {% if item.product.has_warranty %}
+            {% if item.product.year_warranty %}
                 <input type="hidden" name="product_warranty" value="{{ item.warranty }}">
             {% endif %}
         </div>
