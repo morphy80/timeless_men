@@ -16,7 +16,7 @@ class Category(models.Model):
         return self.friendly_name
 
 
-WARRANTY_CHOICES = [('1', 'nonee'), ('2', '2 years'), ('3', '3 years'), ('5', '5 years'), ('l', 'life')]
+WARRANTY_CHOICES = [('1', 'none'), ('2', '2 years'), ('3', '3 years'), ('5', '5 years'), ('l', 'life')]
 
 class Product(models.Model):
     category = models.ForeignKey(
