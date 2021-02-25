@@ -107,7 +107,7 @@ The structure of the site is described in the section below:
 - **Search** - The search function allows the user to search by keywords or filter by price, name, rating and category.
 - **Main-nav with quick links** to the main pages: 'home', 'about us', 'all products', 'category_name' and 'search' function, including also 'accounts' and 'cart' that are displayed on every viewport.
 Landing page with a simple and intuitive response for every type of user to become a potential client, seen on most common viewport.
-<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614265622/timeless/landing_page_mobile_wpz9ig.png" alt="mockup" target="_blank" rel="noopener" width="480" height="640">
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614277415/timeless/landing_page_mobile_ycdiz7.png" alt="mockup" target="_blank" rel="noopener">
 
 #### About page
 
@@ -423,13 +423,18 @@ For the project itself I received inspiration from boutique_ado and my tututors 
 ## Disclaimer
 This site is made for **educational purposes** only!
 
-	<p>Copyright &copy; 2021 Alexandru Apostoiu</p>
-
-<div align="right">
-    <b><a href="#table-of-contents">↥ Back To Top</a></b>
+<div>
+	<b>Copyright &copy; 2021 Alexandru Apostoiu</b>
 </div>
 
 ---
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+<div align="right">
+    <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
+
+---
