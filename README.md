@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/morphy80/timeless_men.svg?branch=master&status=passed)](https://travis-ci.com/github/morphy80/timeless_men)
 
-Full Stack Frameworks with Django - Milestone Project 4
+## Full Stack Frameworks with Django - Milestone Project 4
 
 The live website can be viewed [Timeless Men Watches](https://timeless-men-watches.herokuapp.com/)
 
@@ -107,7 +107,9 @@ The structure of the site is described in the section below:
 - **Search** - The search function allows the user to search by keywords or filter by price, name, rating and category.
 - **Main-nav with quick links** to the main pages: 'home', 'about us', 'all products', 'category_name' and 'search' function, including also 'accounts' and 'cart' that are displayed on every viewport.
 Landing page with a simple and intuitive response for every type of user to become a potential client, seen on most common viewport.
-<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614277415/timeless/landing_page_mobile_ycdiz7.png" alt="mockup" target="_blank" rel="noopener">
+<div align="center">
+    <img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614277415/timeless/landing_page_mobile_ycdiz7.png" alt="mockup" target="_blank" rel="noopener">
+</div>
 
 #### About page
 
@@ -273,7 +275,7 @@ Test coverage percent validation based on threshold for the development process.
 ---
 
 ## Deployment
-The Timeless Men Watches project was developed using the [GitPod](https://www.gitpod.io/) online IDE and
+The 'Timeless Men Watches' project was developed using the [GitPod](https://www.gitpod.io/) online IDE and
 using Git & GitHub for version control. It is hosted on the [Heroku](https://heroku.com/) platform, with static files on Gitpod and user-uploaded images being hosted in AWS S3 Basket.
 
 ### Local Deployment
