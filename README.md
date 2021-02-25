@@ -5,7 +5,8 @@
 Full Stack Frameworks with Django - Milestone Project 4
 
 The live website can be viewed [Timeless Men Watches](https://timeless-men-watches.herokuapp.com/)
-[Responsive mockup](http://ami.responsivedesign.is/#)
+
+Testing viewports[Responsive mockup](http://ami.responsivedesign.is/#)
 
 <img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614261830/timeless/landing-page_gh1i8n.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
@@ -43,6 +44,11 @@ The live website can be viewed [Timeless Men Watches](https://timeless-men-watch
 ---
 
 ## Description
+Based on a thorough research on several related sites, 'Timeless Men Watches' induces a simplistic idea of e-commerce in order to underline the basic 'CRUD' operations on databases.
+The intented purpose is to address and attract mostly men, but not only, with a refined taste for the 'fundemental' accessory of a styled man.
+The site's architecture is a minimalistical one to allow the user to focus more on the products themselves and not to be baffled with many unnecessary pop-ups or unwanted browsing. 
+In other words it is a straight forward navigation and focused more on the product itself for a more detailed understanding and representation.
+
 ---
 
 ## UX
@@ -93,15 +99,15 @@ Database relationship can be found [here]().
 ---
 
 ## Features
-Timeless Men Watches website is composed by six applications: `home`, `about`, `products`, `cart`, `checkout`, `profiles`.
+Timeless Men Watches website is composed by six applications: `home`, `about`, `products`, `cart`, `checkout`, `profiles` with different sections affiliated.
 ### Existing Features
-The structure of the site is in the section below:
+The structure of the site is described in the section below:
 #### Home Page - serves as the initial landing page for all users
 - **Navigation bar (mobile top header)** - - The navbar links vary depending on whether the user is logged in or not. When the user is logged in the 'Profile'and 'Logout' links are shown.
 - **Search** - The search function allows the user to search by keywords or filter by price, name, rating and category.
-- **Main-nav with quick links** to the main pages:'home', 'about us', 'all products', 'category_name' and 'search' function, including also to 'accounts' and 'cart'.
+- **Main-nav with quick links** to the main pages: 'home', 'about us', 'all products', 'category_name' and 'search' function, including also 'accounts' and 'cart' that are displayed on every viewport.
 Landing page with a simple and intuitive response for every type of user to become a potential client, seen on most common viewport.
-<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614265622/timeless/landing_page_mobile_wpz9ig.png" alt="mockup" target="_blank" rel="noopener" width="850">
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614265622/timeless/landing_page_mobile_wpz9ig.png" alt="mockup" target="_blank" rel="noopener" width="480" height="640">
 
 #### About page
 
@@ -214,14 +220,26 @@ Database relationship:
 
 ---
 ## Testing
+Devices and platforms used for testing:
+* Google Chrome.
+* Mozilla Firefox.
+* Opera.
+
+- [x] laptop, laptop with touch (width 1440px);
+- [x] Galaxy S5;
+- [x] Pixel2, Pixel 2XL;
+- [x] Iphone 5/SE, Iphone 6/7/8;
+- [x] Iphone 6/7/8 Plus, IphoneX;
+- [x] Ipad and Ipad Pro;
+
 ### Validation
-HTML: I have used https://validator.w3.org/ in order to validate the HTML code.
+*HTML: I have used https://validator.w3.org/ in order to validate the HTML code.
 
-CSS: I have used https://jigsaw.w3.org/css-validator/ in order to validate the CSS code & CSS prefixes were checked against with https://autoprefixer.github.io/
+*CSS: I have used https://jigsaw.w3.org/css-validator/ in order to validate the CSS code & CSS prefixes were checked against with https://autoprefixer.github.io/
 
-JavaScript: I have used https://jshint.com/ in order to check the JavaScript code.
+*JavaScript: I have used https://jshint.com/ in order to check the JavaScript code.
 
-[PEP8 Online]: (http://pep8online.com/) was used to validate Python.
+*[PEP8 Online]: (http://pep8online.com/) was used to validate Python.
 
 Errors not handled: 
 - Missing href: The href attribute on a and area elements is not required; when those elements do not have href attributes they do not create hyperlinks.
@@ -403,7 +421,9 @@ For the project itself I received inspiration from boutique_ado and my tututors 
 ---
 
 ## Disclaimer
-This site is made for **educational purposes** only!        
+This site is made for **educational purposes** only!
+
+	<p>Copyright &copy; 2021 Alexandru Apostoiu</p>
 
 <div align="right">
     <b><a href="#table-of-contents">↥ Back To Top</a></b>
