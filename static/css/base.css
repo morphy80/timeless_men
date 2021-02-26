@@ -154,6 +154,9 @@ body {
 }
 
 /* -------------------------------- Products */
+.card-product {
+    box-shadow: 3px 3px 5px #c07f4a;
+}
 
 .star {
     color: var(--banner-bg-color);
@@ -435,6 +438,7 @@ a.category-badge > span.badge:hover {
     .navbar-toggler {
         padding: .45rem .45rem;
         font-size: 1rem;
+        border-color: transparent !important;
     }
 
     .navbar {
@@ -464,10 +468,6 @@ a.category-badge > span.badge:hover {
     a.btn, #cart-logical-keep{
         font-size: 1rem;
     }
-
-    /* .text-index {
-        padding-top: 75%;
-    } */
 
     .btt-button {
         height: 24px;

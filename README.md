@@ -6,7 +6,7 @@
 
 The live website can be viewed [Timeless Men Watches](https://timeless-men-watches.herokuapp.com/)
 
-Testing viewports[Responsive mockup](http://ami.responsivedesign.is/#)
+Testing viewports [Responsive mockup](http://ami.responsivedesign.is/#)
 
 <img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614261830/timeless/landing-page_gh1i8n.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
