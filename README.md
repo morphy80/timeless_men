@@ -16,7 +16,7 @@ Testing viewports [Responsive mockup](http://ami.responsivedesign.is/#)
 2. [**UX**](#ux)
     - [**Why This Project**](#why-this-project) 
     - [**User Stories**](#user-stories)
-    - [**Design**](#desing)
+    - [**Design**](#design)
     - [**Wireframes**](#wireframes)
     - [**Database Schema**](#database-schema)
 3. [**Features**](#features)
@@ -53,8 +53,15 @@ In other words it is a straight forward navigation and focused more on the produ
 
 ## UX
 ### Why This Project
+The goal of this project is to create a Full Stack web application to utterly demonstrate the knowledge and skillset obtained throughout the course. 
+A passing grade in this project is required to graduate the course and obtain the Certification Degree. 
+The site is using Python and Django Framework with a back-end database (PostgreSQL) for the back-end stack.
+HTML5, CSS3 with Bootstrap 4.5 as framework and jQuery are being used on the front-end stack.
 
 #### Audience
+- Prospects,mostly men, intrested to purchase watches and accessories.
+- Prospects who want to get a deeper insight into history and functionality of a watch.
+- Men who want to purchase a full service of a watch: guidance, assistance and warranty.
 
  ### User Stories 
 <details>
@@ -66,20 +73,48 @@ In other words it is a straight forward navigation and focused more on the produ
 User story ID | As a | Want to be able to... | So that I can...
 --------------|---------|------------------------|-----------------
 |             ||        **Viewing and Navegation**            ||
-1. | Buyer | View a list of products | Select some to purchase
+1. | Customer | View a list of products | Select item to purchase
+2. | Customer | View individual product details | Identify the price, name, brand, description, rating, category, etc
+3. | Customer | Easily view the total of my purchase at any time | See how much I have spent
+|             || **Registration and User accounts** ||
+4. | Site user | Easily register for an account | Have a personal account to be able to view my profile
+5. | Site user | Easily login or logout	|  Access my personal account information
+6. | Site user | Receive an email confirmation after registration | Verify that my account registration was successful
+7. | Site user | Have a personalized user profile | View my personal order history and order confirmations, and save my payment information
+|             || **Purchasing and Checkout** ||
+8.	| Site user | Search for a specific item from the product list | Find a specific item from the product list that I would like to purchase 
+9. | Site user | Easily see what I've searched for and the results displayed separately | Check availability
+|             || **Purchasing and Checkout** ||
+10. | Customer | Easily select an item when purchasing it. |	Ensure I do not accidentally select the wrong item
+11. | Customer | View items in my cart pending to be bought | Grant the total cost of my purchase
+12. | Customer | Adjust the number of items in my cart | Easily make changes to my purchase before checkout
+13. | Customer | Easily enter my payment information | Check out quickly if desired
+14. | Customer | Assess that my personal and payment information is safe and secure	| Confident to provide the needed information to make a purchase
+15. | Customer | View an order confirmation after checkout | Verify that I haven't created any mistakes
+16. | Customer | Receive an email confirmation after checking out |	To have an evidence of what I've purchased for my records
+|             || **Admin and Store Management** ||           |
+17. | Store Owner | Add a product	| Add new products in my web-shop
+18. | Store Owner | Edit/Update an product	| Change name, brand, description, case, strap, warranty, price and image of a product
+19. | Store Owner | Delete a product |	Remove products that are not available
 </details>
 
 ### Design
 ##### Frameworks
 
-#### Colour Scheme
-
-![Color Palette]()
+#### Color Scheme
+I have choosed a color scheme that is very close to natural tones and inspires elegance and rafinament. Basically every man's first choice for accessories.
+To create the scheme I've used [Coolors](https://coolors.co/)
+![Color Palette](https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614382408/timeless/color_scheme_glrqwt.png)
 
 #### Typography
+I've used [GoogleFonts](https://fonts.google.com/) with the current schema(https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@400;600&family=Roboto&display=swap):
+- `Open Sans` for the title and headers;
+- `Lato` for the nav links;
+- `Roboto` for the rest of the site;
+I've chosen these fonts because they complement well to each other and they are one of the most popular in this arrangement.
 
 #### Icons
-- I used [FontAwesome](https://fontawesome.com/) as the main icon library across the project (e.g. forms, cart, search and user icons in navigation).
+I've used [FontAwesome](https://fontawesome.com/) as the main icon library across the project (e.g. forms, cart, search and user icons in navigation).
 
 ### Wireframes
 
@@ -103,9 +138,9 @@ Timeless Men Watches website is composed by six applications: `home`, `about`, `
 ### Existing Features
 The structure of the site is described in the section below:
 #### Home Page - serves as the initial landing page for all users
-- **Navigation bar (mobile top header)** - - The navbar links vary depending on whether the user is logged in or not. When the user is logged in the 'Profile'and 'Logout' links are shown.
+- **Navigation bar (mobile top header)** - - The navbar links vary depending on whether the user is logged in or not. When the user is logged in the `Profile` `Logout` and `Product Management` links are shown.
 - **Search** - The search function allows the user to search by keywords or filter by price, name, rating and category.
-- **Main-nav with quick links** to the main pages: 'home', 'about us', 'all products', 'category_name' and 'search' function, including also 'accounts' and 'cart' that are displayed on every viewport.
+- **Main-nav with quick links** to the main pages: `home`, `about us`, `all products`, `category_name` and `search` function, including also `accounts` and `cart` that are displayed on every viewport.
 Landing page with a simple and intuitive response for every type of user to become a potential client, seen on most common viewport.
 <div align="center">
     <img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614277415/timeless/landing_page_mobile_ycdiz7.png" alt="mockup" target="_blank" rel="noopener">
@@ -135,7 +170,7 @@ Landing page with a simple and intuitive response for every type of user to beco
 - Back to products buttons in case user wants to buy more products.
 
 #### Profile page
-- Only available to logged in user
+- Only available to logged in user.
 - Billing information can be updated from this view.
 - **Order History**- Users are able to view a summary of their previous orders placed. Users can click on the hovered order number link which provides a detail view of the selected order. 
 Users can click Back to Profile to go backwards.
@@ -148,8 +183,8 @@ Users can click Back to Profile to go backwards.
 #### Django-allauth features
 - Allauth templates customized for this project.
 
-#### 404 error page
-Custom 404 page contain error messages and error handlers to catch these errors. My custom messages allow the user to redirect back to the home page.
+#### 404 and 500 error pages
+Custom 404 and 500 pages contain error messages and error handlers to catch these errors. A custom message with a link allows the user to redirect back to the home page.
 
 ### Features Left to Implement
 #### Admin: defensive modal
@@ -254,7 +289,7 @@ Testing information can be found in a separate readme file ()
 
 # Automatic Testing
 ### Travis Continuous Integration
-In addition to the manual testing, I used Travis CI for Continuous Integration testing of my code. So far 33 tests had been implemented.
+In addition to the manual testing, I used Travis CI for Continuous Integration testing of my code. So far 34 tests had been implemented.
 
 The [Coverage](https://pypi.org/project/coverage/) library was used throughout testing to help keep track of how much of my code was covered by the tests.
 The tests provide an overall coverage of 45%.
@@ -335,7 +370,7 @@ To deploy the project to [Heroku](https://heroku.com/) the following steps need 
 1. Create a **requirement.txt** file, which contains a list of the dependencies, using the following command in the terminal:    
 `pip3 freeze > requirements.txt`    
 2. Create a **Procfile**, in order to tell Heroku how to run the project, using the following command in the terminal:      
-`web: gunicorn MS4_Project.wsgi:application`    
+`web: gunicorn timeless_men.wsgi:application`    
 3. `git add`, `git commit` and `git push` these files to GitHub repository.     
 NOTE: these 1-3 steps already done in this project and included in the GitHub repository, but ilustrated here as they are required for the successfull deployment to Heroku.        
 As well as that, other things that are required for the Heroku deployment and have to be installed: **gunicorn** (WSGI HTTP Server), **dj-database-url** for database connection and **Psycopg** (PostgreSQL driver for Python). All of the mentioned above are *already installed* in this project in the requirements.txt file.     
@@ -413,7 +448,7 @@ In order to send real emails from the application, you need to connect it to you
 I would like to thank everyone who has helped me throughout the development of this project:      
 - **My mentor** [Guido](https://github.com/guidocecilio) for his guidance, very useful tips and advice!         
 - **Code Institute tutors** Michael, Tim, Johan, Stephen, Miklos, Cormac, Igor and others for their help to debug issues, assistance and support!   
-- Many thanks to my fellow students, **Slack community** and, of course, to my special friend **my rubber ducky** and **my family** for the time, patience, help and support!         
+- Many thanks to my fellow students, **Slack community** and, of course, to my special friend **rubber ducky** and **my family** for the time, patience, help and support!         
 For the project itself I received inspiration from boutique_ado and my tututors and also from other students via Slack. 
 
 <div align="right">

@@ -1,3 +1,7 @@
+/* ================
+    Global settings
+   ================ */
+
 :root {
     --banner-bg-color:#c07f4a;
     --nav-bg-color: #edece9;
@@ -5,6 +9,14 @@
 
 html {
     height: 100%;
+}
+
+body {
+    background: url('/media/home_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Lato', sans-serif;
 }
 
 p {
@@ -40,14 +52,6 @@ a:active  {
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-}
-
-body {
-    background: url('/media/home_bg.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato', sans-serif;
 }
 
 .origin {
@@ -329,7 +333,7 @@ a.category-badge > span.badge:hover {
 	color: #17a2b8; /* text-info */
 }
 
-/* Product Form */
+/* --- Product Form --- */
 
 .btn-file {
     position: relative;
@@ -362,7 +366,7 @@ a.category-badge > span.badge:hover {
     margin-bottom: 50px;
 }
 
-/* Footer */
+/* --- Footer --- */
 
 .page-footer {
     background-color: #fff;
