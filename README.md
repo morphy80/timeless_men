@@ -72,30 +72,30 @@ HTML5, CSS3 with Bootstrap 4.5 as framework and jQuery are being used on the fro
 
 User story ID | As a | Want to be able to... | So that I can...
 --------------|---------|------------------------|-----------------
-|             ||        **Viewing and Navegation**            ||
-1. | Customer | View a list of products | Select item to purchase
-2. | Customer | View individual product details | Identify the price, name, brand, description, rating, category, etc
-3. | Customer | Easily view the total of my purchase at any time | See how much I have spent
+|             || **Viewing and Navigation** ||
+1 | Customer | View a list of products | Select item to purchase
+2 | Customer | View individual product details | Identify the price, name, brand, description, rating, category, etc
+3 | Customer | Easily view the total of my purchase at any time | See how much I have spent
 |             || **Registration and User accounts** ||
-4. | Site user | Easily register for an account | Have a personal account to be able to view my profile
-5. | Site user | Easily login or logout	|  Access my personal account information
-6. | Site user | Receive an email confirmation after registration | Verify that my account registration was successful
-7. | Site user | Have a personalized user profile | View my personal order history and order confirmations, and save my payment information
+4 | Site user | Easily register for an account | Have a personal account to be able to view my profile
+5 | Site user | Easily login or logout	|  Access my personal account information
+6 | Site user | Receive an email confirmation after registration | Verify that my account registration was successful
+7 | Site user | Have a personalized user profile | View my personal order history and order confirmations, and save my payment information
 |             || **Purchasing and Checkout** ||
-8.	| Site user | Search for a specific item from the product list | Find a specific item from the product list that I would like to purchase 
-9. | Site user | Easily see what I've searched for and the results displayed separately | Check availability
+8 | Site user | Search for a specific item from the product list | Find a specific item from the product list that I would like to purchase 
+9 | Site user | Easily see what I've searched for and the results displayed separately | Check availability
 |             || **Purchasing and Checkout** ||
-10. | Customer | Easily select an item when purchasing it. |	Ensure I do not accidentally select the wrong item
-11. | Customer | View items in my cart pending to be bought | Grant the total cost of my purchase
-12. | Customer | Adjust the number of items in my cart | Easily make changes to my purchase before checkout
-13. | Customer | Easily enter my payment information | Check out quickly if desired
-14. | Customer | Assess that my personal and payment information is safe and secure	| Confident to provide the needed information to make a purchase
-15. | Customer | View an order confirmation after checkout | Verify that I haven't created any mistakes
-16. | Customer | Receive an email confirmation after checking out |	To have an evidence of what I've purchased for my records
-|             || **Admin and Store Management** ||           |
-17. | Store Owner | Add a product	| Add new products in my web-shop
-18. | Store Owner | Edit/Update an product	| Change name, brand, description, case, strap, warranty, price and image of a product
-19. | Store Owner | Delete a product |	Remove products that are not available
+10 | Customer | Easily select an item when purchasing it. |	Ensure I do not accidentally select the wrong item
+11 | Customer | View items in my cart pending to be bought | Grant the total cost of my purchase
+12 | Customer | Adjust the number of items in my cart | Easily make changes to my purchase before checkout
+13 | Customer | Easily enter my payment information | Check out quickly if desired
+14 | Customer | Assess that my personal and payment information is safe and secure	| Confident to provide the needed information to make a purchase
+15 | Customer | View an order confirmation after checkout | Verify that I haven't created any mistakes
+16 | Customer | Receive an email confirmation after checking out |	To have an evidence of what I've purchased for my records
+|             || **Admin and Store Management** ||           
+17 | Store Owner | Add a product	| Add new products in my web-shop
+18 | Store Owner | Edit/Update an product	| Change name, brand, description, case, strap, warranty, price and image of a product
+19 | Store Owner | Delete a product |	Remove products that are not available
 </details>
 
 ### Design
@@ -107,7 +107,7 @@ To create the scheme I've used [Coolors](https://coolors.co/)
 ![Color Palette](https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614382408/timeless/color_scheme_glrqwt.png)
 
 #### Typography
-I've used [GoogleFonts](https://fonts.google.com/) with the current schema(https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@400;600&family=Roboto&display=swap):
+I've used [GoogleFonts](https://fonts.google.com/) with the current [schema](https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@400;600&family=Roboto&display=swap):
 - `Open Sans` for the title and headers;
 - `Lato` for the nav links;
 - `Roboto` for the rest of the site;
@@ -142,6 +142,7 @@ The structure of the site is described in the section below:
 - **Search** - The search function allows the user to search by keywords or filter by price, name, rating and category.
 - **Main-nav with quick links** to the main pages: `home`, `about us`, `all products`, `category_name` and `search` function, including also `accounts` and `cart` that are displayed on every viewport.
 Landing page with a simple and intuitive response for every type of user to become a potential client, seen on most common viewport.
+
 <div align="center">
     <img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614277415/timeless/landing_page_mobile_ycdiz7.png" alt="mockup" target="_blank" rel="noopener">
 </div>
@@ -197,7 +198,6 @@ This feature allows users to 'log in' using social networks accounts such Google
 Another important features that I've noticed searching the internet for sources of inspiration on other similar sites.
 ##### Other small features
 Any website can have endless possibilites to extend. Here are some 'minor' ones that I left to consider:
--
 
 <div align="right">
     <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -235,6 +235,7 @@ Any website can have endless possibilites to extend. Here are some 'minor' ones 
 - [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) for compatibility with AWS.
 - [Travis](https://travis-ci.org/) - for integration testing.
 - [Cloudinary](https://cloudinary.com/) - to host images used in README and also product's images to provide URLs.
+- [Unsplash](https://unsplash.com/) - to download images for the products and landing page.
 - [Figma](https://www.figma.com/) - to create wireframes.
 - [Coolors.co](https://coolors.co/) - to create colour palette used in the README.
 
@@ -276,7 +277,7 @@ Devices and platforms used for testing:
 
 *JavaScript: I have used https://jshint.com/ in order to check the JavaScript code.
 
-*[PEP8 Online]: (http://pep8online.com/) was used to validate Python.
+*PEP8 Online: (http://pep8online.com/) was used to validate Python.
 
 Errors not handled: 
 - Missing href: The href attribute on a and area elements is not required; when those elements do not have href attributes they do not create hyperlinks.
