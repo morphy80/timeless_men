@@ -79,23 +79,24 @@ User story ID | As a | Want to be able to... | So that I can...
 |             || **Registration and User accounts** ||
 4 | Site user | Easily register for an account | Have a personal account to be able to view my profile
 5 | Site user | Easily login or logout	|  Access my personal account information
-6 | Site user | Receive an email confirmation after registration | Verify that my account registration was successful
-7 | Site user | Have a personalized user profile | View my personal order history and order confirmations, and save my payment information
+6 | Site user | Easily recover my password in case I forget  | Recover access to my account
+7 | Site user | Receive an email confirmation after registration | Verify that my account registration was successful
+8 | Site user | Have a personalized user profile | View my personal order history and order confirmations, and save my payment information
 |             || **Purchasing and Checkout** ||
-8 | Site user | Search for a specific item from the product list | Find a specific item from the product list that I would like to purchase 
-9 | Site user | Easily see what I've searched for and the results displayed separately | Check availability
+9 | Site user | Search for a specific item from the product list | Find a specific item from the product list that I would like to purchase 
+10 | Site user | Easily see what I've searched for and the results displayed separately | Check availability
 |             || **Purchasing and Checkout** ||
-10 | Customer | Easily select an item when purchasing it. |	Ensure I do not accidentally select the wrong item
-11 | Customer | View items in my cart pending to be bought | Grant the total cost of my purchase
-12 | Customer | Adjust the number of items in my cart | Easily make changes to my purchase before checkout
-13 | Customer | Easily enter my payment information | Check out quickly if desired
-14 | Customer | Assess that my personal and payment information is safe and secure	| Confident to provide the needed information to make a purchase
-15 | Customer | View an order confirmation after checkout | Verify that I haven't created any mistakes
-16 | Customer | Receive an email confirmation after checking out |	To have an evidence of what I've purchased for my records
+11 | Customer | Easily select an item when purchasing it. |	Ensure I do not accidentally select the wrong item
+12 | Customer | View items in my cart pending to be bought | Grant the total cost of my purchase
+13 | Customer | Adjust the number of items in my cart | Easily make changes to my purchase before checkout
+14 | Customer | Easily enter my payment information | Check out quickly if desired
+15 | Customer | Assess that my personal and payment information is safe and secure	| Confident to provide the needed information to make a purchase
+16 | Customer | View an order confirmation after checkout | Verify that I haven't created any mistakes
+17 | Customer | Receive an email confirmation after checking out |	To have an evidence of what I've purchased for my records
 |             || **Admin and Store Management** ||           
-17 | Store Owner | Add a product	| Add new products in my web-shop
-18 | Store Owner | Edit/Update an product	| Change name, brand, description, case, strap, warranty, price and image of a product
-19 | Store Owner | Delete a product |	Remove products that are not available
+18 | Store Owner | Add a product	| Add new products in my web-shop
+19 | Store Owner | Edit/Update an product	| Change name, brand, description, case, strap, warranty, price and image of a product
+20 | Store Owner | Delete a product |	Remove products that are not available
 </details>
 
 ### Design
@@ -148,27 +149,55 @@ Landing page with a simple and intuitive response for every type of user to beco
 </div>
 
 #### About page
+- A summary of the business concept as an introduction for the user.
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614498173/timeless/snippets/about_mvnvjy.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 #### Login/Register page
+- Allow new user to register for an account and allow existing users to login to their account.
+- **Register** - User must provide a unique username and email address, which are checked against existing entries in the database. 
+An email address and password is required, which must be entered twice to check it has been input correctly.
+- **Message** - On successfully registering the user will be redirected to the home page. An alert message will notify the user that the account has been created and they are now logged in.
+- The login page only requires the user to input there username and password. There is a link to the register page so a user can create an account, and a password reset link if a user has forgotten or lost their password and remember checkbox to store logging details.
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614498212/timeless/snippets/sign_up_l6pqpa.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 #### Products page
+- All users are able to view this page, displays a general information about all the available products.
+- Products can be viewed either by using `all products` or by simply clicking the `shop now` button from home page.
+- Services count number informs the user the current services total.
+- Sort box functionality added to filter by price, name, rating, category.
+- Individual product can be added to the cart.
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614499846/timeless/snippets/products_aykngk.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 #### Product details page
+- All users are able to view this page, displays more information about the selected product
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614498190/timeless/snippets/product_details_tdda4d.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 #### Shopping cart page
+- **Your items** - Display a summary of the item in the cart where each product has a name, brand, warranty, SKU(number_id) and price attached.
+- **Edit quantity** - User can amend the quantity of the services by clicking the '-' or '+' to increasing or decreasing the quantity in cart.
+- **Remove from shopping bag** - Allows the user to remove the service from the cart.
+- **Continue shopping** - Redirects the user back to the browse all products page to continue shopping.
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614500101/timeless/snippets/shopping_cart_hsysc4.png" alt="mockup" target="_blank" rel="noopener" width="850">
+
+#### Search page
+- Designated page to return the results of the search functionality
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614498206/timeless/snippets/search_qpds05.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 #### Checkout page
 - **Order summary** - Display a summary of the products in the bag with each product showing the an image, title, brand, warranty, quantity and price.
 - **Pay with card** - Allows the user to make a card payment.
 - **Stripe** - Allows the user to pay securely using Stripe payment
 - **Purchase Form** - This form connects to the Stripe API to process a user's card details. No card details are stored locally or on the server, they are only sent to Stripe and then discarded.
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614498158/timeless/snippets/checkout_e8g8ez.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 #### Checkout Success page
 - **Thank You page** - User receives confirmation that the order has been placed and is given a order reference number.
 - **Email** - User receives email confirmation there order has been placed and receives a order summary.
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614502273/timeless/snippets/email_confirmation_ssncy1.png" alt="mockup" target="_blank" rel="noopener" width="850">
 - **Order summary** - Display an order summary listing each product showing the an image, title, brand, warranty, quantity and price, besides of the billing information.
 - **Message** - confirmation that the order was placed.
 - Back to products buttons in case user wants to buy more products.
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614498158/timeless/snippets/checkout_success_rpsyxr.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 #### Profile page
 - Only available to logged in user.
@@ -176,16 +205,19 @@ Landing page with a simple and intuitive response for every type of user to beco
 - **Order History**- Users are able to view a summary of their previous orders placed. Users can click on the hovered order number link which provides a detail view of the selected order. 
 Users can click Back to Profile to go backwards.
 - Users can log out from this tab.
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614498213/timeless/snippets/profile_zl0zj9.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 #### Admin product managment
-- Only available to logged admin user
+- Only available to logged admin user!
 * **Add | View | Edit | Delete a product** admin can log in to add new product or edit and delete available products.
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614498213/timeless/snippets/profile_zl0zj9.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 #### Django-allauth features
 - Allauth templates customized for this project.
 
 #### 404 and 500 error pages
 Custom 404 and 500 pages contain error messages and error handlers to catch these errors. A custom message with a link allows the user to redirect back to the home page.
+    <img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614498167/timeless/snippets/404_oey98u.png" alt="404-page" alt="mockup" target="_blank" rel="noopener" width="850">
 
 ### Features Left to Implement
 #### Admin: defensive modal
@@ -198,6 +230,12 @@ This feature allows users to 'log in' using social networks accounts such Google
 Another important features that I've noticed searching the internet for sources of inspiration on other similar sites.
 ##### Other small features
 Any website can have endless possibilites to extend. Here are some 'minor' ones that I left to consider:
+- Pagination for and easier navigation throughout the products while the database grow larger.
+- Reviews page where a blog-type section gets interactive with the comunity of customers.
+- Detailed page for the warranty of a product.
+- Notification for any product that it is on `Sale` while the page is active.
+- Discounts and bonification as actions for improvement the client fidelity.
+- Privacy policy and legal terms section.
 
 <div align="right">
     <b><a href="#table-of-contents">↥ Back To Top</a></b>
