@@ -211,14 +211,14 @@ Users can click Back to Profile to go backwards.
 #### Admin product managment
 - Only available to logged admin user!
 * **Add | View | Edit | Delete a product** admin can log in to add new product or edit and delete available products.
-<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614503399/timeless/snippets/product_management_jz48gy.png" alt="mockup" target="_blank" rel="noopener" width="850">
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614503764/timeless/snippets/product_management_fuqbbc.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 #### Django-allauth features
 - Allauth templates customized for this project.
 
 #### 404 and 500 error pages
 Custom 404 and 500 pages contain error messages and error handlers to catch these errors. A custom message with a link allows the user to redirect back to the home page.
-    <img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614502782/timeless/snippets/rsz_1404_uz0kuf.png" alt="404-page" alt="mockup" target="_blank" rel="noopener" width="850">
+    <img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614503750/timeless/snippets/rsz_1404_oyxmoj.png" alt="404-page" alt="mockup" target="_blank" rel="noopener" width="850">
 
 ### Features Left to Implement
 #### Admin: defensive modal
@@ -297,6 +297,7 @@ Database relationship:
 
 ---
 ## Testing
+### Manual Testing
 Devices and platforms used for testing:
 * Google Chrome.
 * Mozilla Firefox.
@@ -324,11 +325,9 @@ Errors not handled:
 - Ignore avoid using null=True on string-based fields such CharField.cornf for the non-required address formats.
 - Ignore avoid using null=True on string-based fields such URLField and ImageField for the images.
 
-# Manual Testing
-Testing information can be found in a separate readme file ()
 
-# Automatic Testing
-### Travis Continuous Integration
+### Automatic Testing
+#### Travis Continuous Integration
 In addition to the manual testing, I used Travis CI for Continuous Integration testing of my code. So far 34 tests had been implemented.
 
 The [Coverage](https://pypi.org/project/coverage/) library was used throughout testing to help keep track of how much of my code was covered by the tests.
