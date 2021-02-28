@@ -194,10 +194,11 @@ An email address and password is required, which must be entered twice to check 
 - **Thank You page** - User receives confirmation that the order has been placed and is given a order reference number.
 - **Email** - User receives email confirmation there order has been placed and receives a order summary.
 <img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614502273/timeless/snippets/email_confirmation_ssncy1.png" alt="mockup" target="_blank" rel="noopener" width="850">
+
 - **Order summary** - Display an order summary listing each product showing the an image, title, brand, warranty, quantity and price, besides of the billing information.
 - **Message** - confirmation that the order was placed.
 - Back to products buttons in case user wants to buy more products.
-<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614498158/timeless/snippets/checkout_success_rpsyxr.png" alt="mockup" target="_blank" rel="noopener" width="850">
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614502924/timeless/snippets/checkout_success1_jdzbkg.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 #### Profile page
 - Only available to logged in user.
@@ -210,14 +211,14 @@ Users can click Back to Profile to go backwards.
 #### Admin product managment
 - Only available to logged admin user!
 * **Add | View | Edit | Delete a product** admin can log in to add new product or edit and delete available products.
-<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614498213/timeless/snippets/profile_zl0zj9.png" alt="mockup" target="_blank" rel="noopener" width="850">
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614503399/timeless/snippets/product_management_jz48gy.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 #### Django-allauth features
 - Allauth templates customized for this project.
 
 #### 404 and 500 error pages
 Custom 404 and 500 pages contain error messages and error handlers to catch these errors. A custom message with a link allows the user to redirect back to the home page.
-    <img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614498167/timeless/snippets/404_oey98u.png" alt="404-page" alt="mockup" target="_blank" rel="noopener" width="850">
+    <img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614502782/timeless/snippets/rsz_1404_uz0kuf.png" alt="404-page" alt="mockup" target="_blank" rel="noopener" width="850">
 
 ### Features Left to Implement
 #### Admin: defensive modal
