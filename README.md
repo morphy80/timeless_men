@@ -126,7 +126,7 @@ For deployment(production), a **PostgreSQL** database is provided by Heroku as a
 More information about Django’s authentication system can be found [here](https://docs.djangoproject.com/en/3.1/ref/contrib/auth/).
 
 #### Data Modelling
-Database relationship can be found [here]().
+Database relationship can be found [here](https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614508541/timeless/database_schema_x4pacm.png).
 
 <div align="right">
     <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -283,7 +283,7 @@ Any website can have endless possibilites to extend. Here are some 'minor' ones 
 - [PostgreSQL](https://www.postgresql.org/) - a production database.
 
 Database relationship:
-<img src="" alt="mockup" target="_blank" rel="noopener" width="850">
+<img src="https://res.cloudinary.com/ddrsbzhmf/image/upload/v1614508541/timeless/database_schema_x4pacm.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 ### Version Control
 - [**GitHub**](https://github.com/) - as a remote repository to push and store the committed changes to my project from Git.
